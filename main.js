@@ -58,7 +58,7 @@ function updateStudent(id, student) {
 }
 
 function deleteStudent(id) {
-    fetch(`https://your-backend-app.onrender.com/delete-students/${id}`, {
+    fetch(`https://your-backend-app.onrender.com/delete-student/${id}`, {
         method: 'DELETE',
     }).then(() => fetchStudents());
 }
