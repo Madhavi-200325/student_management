@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchStudents() {
-    fetch('http://localhost:5000/students')
+    fetch('https://your-backend-app.onrender.com/students')
         .then(response => response.json())
         .then(data => {
             const tbody = document.querySelector('#studentTable tbody');
