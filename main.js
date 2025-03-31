@@ -42,7 +42,7 @@ function fetchStudents() {
 }
 
 function addStudent(student) {
-    fetch('http://localhost:5000/students', {
+    fetch('https://your-backend-app.onrender.com/add-student', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(student),
@@ -50,7 +50,7 @@ function addStudent(student) {
 }
 
 function updateStudent(id, student) {
-    fetch(`http://localhost:5000/students/${id}`, {
+    fetch(`https://your-backend-app.onrender.com/update-student/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(student),
@@ -58,7 +58,7 @@ function updateStudent(id, student) {
 }
 
 function deleteStudent(id) {
-    fetch(`http://localhost:5000/students/${id}`, {
+    fetch(`https://your-backend-app.onrender.com/delete-students/${id}`, {
         method: 'DELETE',
     }).then(() => fetchStudents());
 }
